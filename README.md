@@ -18,3 +18,5 @@ Demonstrate basic data cleaning, summary statistics, and visualization using a r
 3. Outputs: 
    - Summary stats in console.
    - Plot saved as `age_distribution.png`.
+   - 4. **Extra Analysis**: Compared survival rates by gender.  
+   - Output: ![Survival by Gender](survival_by_gender.png)  
