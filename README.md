@@ -23,3 +23,4 @@ Demonstrate basic data cleaning, summary statistics, and visualization using a r
    - ## Key Findings  
 - 74% of female passengers survived vs. 19% of males.  
 - Average age: 29.7 years.   
+![Survival by Gender](survival_by_gender.png)  
