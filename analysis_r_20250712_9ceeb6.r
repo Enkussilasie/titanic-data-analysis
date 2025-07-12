@@ -26,13 +26,20 @@ ggplot(data_clean, aes(x = Age)) +
 
 # Save plot
 ggsave("age_distribution.png")
-# Extra: Survival rate by gender
-ggplot(data_clean, aes(x = Sex, fill = factor(Survived))) +
+# Extra Analysis: Survival Rate by Gender
+survival_plot <- ggplot(data_clean, aes(x = Sex, fill = factor(Survived))) +
   geom_bar(position = "fill") +
-  labs(title = "Survival Rate by Gender",
-       x = "Gender",
-       y = "Proportion Survived",
-       fill = "Survived (0=No, 1=Yes)") +
+  labs(
+    title = "Survival Rate by Gender (Titanic Dataset)",
+    x = "Gender",
+    y = "Proportion Survived",
+    fill = "Survived (0 = No, 1 = Yes)"
+  ) +
+  scale_fill_manual(values = c("red", "green")) +  # Custom colors
   theme_minimal()
 
-ggsave("survival_by_gender.png")  # Saves the plot
+# Save the plot
+ggsave("survival_by_gender.png", plot = survival_plot, width = 8, height = 5)
+
+# Display the plot
+print(survival_plot)
