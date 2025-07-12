@@ -19,4 +19,7 @@ Demonstrate basic data cleaning, summary statistics, and visualization using a r
    - Summary stats in console.
    - Plot saved as `age_distribution.png`.
    - 4. **Extra Analysis**: Compared survival rates by gender.  
-   - Output: ![Survival by Gender](survival_by_gender.png)  
+   - Output: ![Survival by Gender](survival_by_gender.png)
+   - ## Key Findings  
+- 74% of female passengers survived vs. 19% of males.  
+- Average age: 29.7 years.   
