@@ -26,3 +26,13 @@ ggplot(data_clean, aes(x = Age)) +
 
 # Save plot
 ggsave("age_distribution.png")
+# Extra: Survival rate by gender
+ggplot(data_clean, aes(x = Sex, fill = factor(Survived))) +
+  geom_bar(position = "fill") +
+  labs(title = "Survival Rate by Gender",
+       x = "Gender",
+       y = "Proportion Survived",
+       fill = "Survived (0=No, 1=Yes)") +
+  theme_minimal()
+
+ggsave("survival_by_gender.png")  # Saves the plot
